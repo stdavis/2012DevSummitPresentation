@@ -11,7 +11,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 797,
+				"buffer_size": 1349,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/core.css",
+			"settings":
+			{
+				"buffer_size": 5740,
 				"line_ending": "Windows"
 			}
 		},
@@ -22,20 +30,28 @@
 				"buffer_size": 16077,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "/C/inetpub/wwwroot/libs/bartaz-impress.js-3624077/css/impress-demo.css",
+			"settings":
+			{
+				"buffer_size": 13061,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 392.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 552.0
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 132.0
 	},
 	"distraction_free":
 	{
@@ -48,6 +64,9 @@
 	},
 	"file_history":
 	[
+		"/C/inetpub/wwwroot/DevSummitPresentation/js/impress.js",
+		"/C/inetpub/wwwroot/DevSummitPresentation/dev-summit.sublime-project",
+		"/C/Users/stdavis/AppData/Roaming/Sublime Text 2/Packages/Default/Global.sublime-settings",
 		"/C/inetpub/wwwroot/LtGovVotingDistricts/trunk/ltgov/DistrictsMap.js",
 		"/C/inetpub/wwwroot/vote_utah_gov/trunk/content/css/agrc_map.css",
 		"/C/inetpub/wwwroot/vote_utah_gov/trunk/index.html",
@@ -62,7 +81,6 @@
 		"/C/inetpub/wwwroot/vote_utah_gov/trunk/content/agrc/widgets/tests/TOCTests.html",
 		"/C/inetpub/wwwroot/vote_utah_gov/trunk/unit_tests.html",
 		"/C/inetpub/wwwroot/libs/pivotal-jasmine-c87cf71/spec/runner.html",
-		"/C/Users/stdavis/AppData/Roaming/Sublime Text 2/Packages/Default/Global.sublime-settings",
 		"/C/Users/stdavis/AppData/Roaming/Sublime Text 2/Packages/User/JavaScript.sublime-settings",
 		"/C/Users/stdavis/AppData/Roaming/Sublime Text 2/Packages/Default/Base File.sublime-settings",
 		"/C/Users/stdavis/AppData/Roaming/Sublime Text 2/Packages/User/Base File.sublime-settings",
@@ -84,6 +102,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"font",
 			"app",
 			"ltgov",
 			"claro",
@@ -106,7 +125,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -114,7 +133,7 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 797,
+						"buffer_size": 1349,
 						"regions":
 						{
 						},
@@ -136,15 +155,43 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/core.css",
+					"settings":
+					{
+						"buffer_size": 5740,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "/C/inetpub/wwwroot/libs/bartaz-impress.js-3624077/index.html",
 					"settings":
 					{
@@ -166,7 +213,35 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1472.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/inetpub/wwwroot/libs/bartaz-impress.js-3624077/css/impress-demo.css",
+					"settings":
+					{
+						"buffer_size": 13061,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -180,7 +255,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 32.0
 	},
 	"layout":
 	{
@@ -236,7 +311,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 286.0,
 	"status_bar_visible": true
 }
