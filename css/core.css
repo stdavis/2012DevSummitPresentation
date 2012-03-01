@@ -17,3 +17,7 @@ h1 {
 #overview {
 	font-size: 115px;
 }
+#impress.step-allslides .step {
+	opacity: 1;
+	cursor: pointer;
+}
