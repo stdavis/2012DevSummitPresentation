@@ -21,3 +21,22 @@ h1 {
 	opacity: 1;
 	cursor: pointer;
 }
+#allslides {
+	z-index: -50;
+}
+h2 {
+	font-size: 40px;
+	margin-top: 10px;
+}
+#impress[class*='step-overview-'] #overview {
+	opacity: 1;
+}
+#impress[class*='step-overview-'] #overview span {
+	opacity: 0.3;
+}
+#impress.step-overview-pi #overview #project-intro {
+	opacity: 1;
+}
+#impress.step-overview-ob #overview #objectives {
+	opacity: 1;
+}
