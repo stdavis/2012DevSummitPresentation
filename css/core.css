@@ -40,3 +40,7 @@ h2 {
 #impress.step-overview-ob #overview #objectives {
 	opacity: 1;
 }
+.slide-image {
+	margin-left: -38px;
+	margin-top: 20px;
+}
