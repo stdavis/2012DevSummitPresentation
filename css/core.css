@@ -44,3 +44,25 @@ h2 {
 	margin-left: -38px;
 	margin-top: 20px;
 }
+.step .centered-img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.centered-txt {
+	text-align: center;
+}
+#projectname {
+	height: 700px;
+}
+#projectname p {
+	width: 600px;
+	position: absolute;
+	bottom: 50px;
+	margin-left: 50%;
+	left: -300px;
+}
+
+#impress.step-overview-m #overview #mobile {
+	opacity: 1;
+}
