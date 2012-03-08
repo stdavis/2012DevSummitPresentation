@@ -62,7 +62,9 @@ h2 {
 	margin-left: 50%;
 	left: -300px;
 }
-
 #impress.step-overview-m #overview #mobile {
 	opacity: 1;
+}
+#mitigation img {
+	border: solid 1px gray;
 }
