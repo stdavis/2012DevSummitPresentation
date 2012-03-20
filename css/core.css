@@ -77,3 +77,10 @@ h2 {
 #health p {
 	text-align: center;
 }
+#app-type span {
+	font-size: 55px;
+	line-height: 120px;
+}
+#app-type h1 {
+	margin-bottom: 80px;
+}
