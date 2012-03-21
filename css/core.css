@@ -84,3 +84,22 @@ h2 {
 #app-type h1 {
 	margin-bottom: 80px;
 }
+.footnote {
+	font-size: 20px;
+	text-align: center;
+	color: gray;
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+}
+.pro {
+	background-color: #80A894;
+}
+.con {
+	background-color: #9E8A8A;
+}
+.pro-con {
+	margin: 200px;
+	text-align: center;
+	border-radius: 10px;
+}
