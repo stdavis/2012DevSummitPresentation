@@ -6,6 +6,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Utah Wildlife-Vehicle Collision Reporting System</title>
 
+    <link rel='stylesheet' href='css/highlight.css'/>
+    <link rel='stylesheet' href='css/impress.css'/>
     <link rel='stylesheet' href='css/core.css'/>
 </head>
 <body>
@@ -49,7 +51,7 @@
     </div>
     <div class='step' data-x='7740' data-y='-4800' data-rotate='-90' data-scale='4'>
         <ul>
-            <li>Techolongy Stack</li>
+            <li><img src='images/tools.png'> Techolongy Stack</li>
         </ul>
     </div>
     <div class='step' data-x='8140' data-y='-4800' data-rotate='-90' data-scale='4'>
@@ -101,31 +103,185 @@
 
     <!-- MOBILE -->
     <div id='overview-m' class='step' data-x='4000' data-y='0' data-scale='16'></div>
-    <div id='app-type' class='step' data-x='5500' data-y='1450' data-scale='4'>
-        <h1>Application Type?</h1>
-        <span>Native</span><br>
-        vs.<br>
-        <span>Hybrid</span><br>
-        vs.<br>
-        <span>Web</span>
+    <div id='app-type' class='step pro-con-overview' data-x='5500' data-y='1450' data-scale='4'>
+        <div class='header'>
+           <span>Application Type?</span> <span class='pro'>Pro's</span> <span>vs.</span> <span class='con'>Con's</span>
+        </div>
+        <span id='native'>Native</span><br>
+        <br>
+        <span id='web'>Web</span><br>
+        <br>
+        <span id='hybrid'>Hybrid</span>
         <div class='footnote'>
             <a href='http://buildmobile.com/native-hybrid-or-web-apps/' target="_blank">*BuildMobile Article</a>
         </div>
     </div>
+
     <!-- NATIVE -->
+    <div id='app-type-overview-native' class='step' data-x='5500' data-y='1450' data-scale='4'></div>
     <div class='step' data-x='4900' data-y='1000' data-rotate='-90' data-scale='1'>
-        <div class='pro-con pro'>Performance<br>&<br>Stability</div>
+        <div class='pro-con pro'>Performance & Stability</div>
+    </div>
+    <div class='step' data-x='5100' data-y='1000' data-rotate='-90' data-scale='1'>
+        <div class='pro-con pro'>Easy Access to Device Hardware</div>
+    </div>
+    <div class='step' data-x='5337' data-y='1000' data-rotate='-90' data-scale='1'>
+        <div class='pro-con con'>
+            <img src='images/light_bulb.png'>Enterprise Distribution is a Pain
+        </div>
+    </div>
+    <div class='step' data-x='5610' data-y='1000' data-rotate='-90' data-scale='1'>
+        <div class='pro-con con'>Platform-specific Development Environment</div>
+    </div>
+    <div class='step' data-x='5810' data-y='1000' data-rotate='-90' data-scale='1'>
+        <div class='pro-con con'>Slow Updates</div>
+    </div>
+    <div class='step' data-x='6010' data-y='1000' data-rotate='-90' data-scale='1'>
+        <div class='pro-con'>
+            Examples:<br>
+            <a href='http://wunderlist.com'>wunderlist.com</a><br>
+            <a href='http://www.rovio.com/en/our-work/games/view/1/angry-birds'>Angry Birds</a>
+        </div>
+    </div>
+
+    <!-- WEB -->
+    <div id='app-type-overview-web' class='step' data-x='5500' data-y='1450' data-scale='4'></div>
+    <div class='step web-step' data-x='4900' data-y='1709' data-rotate='-90' data-scale='1'>
+        <div class='pro-con pro'>Single Codebase on All Devices</div>
+    </div>
+    <div class='step web-step' data-x='5100' data-y='1709' data-rotate='-90' data-scale='1'>
+        <div class='pro-con pro'>Re-use Existing Web Skills</div>
+    </div>
+    <div class='step web-step' data-x='5300' data-y='1709' data-rotate='-90' data-scale='1'>
+        <div class='pro-con pro'>Instant Install & Updates</div>
+    </div>
+    <div class='step web-step' data-x='5464' data-y='1709' data-rotate='-90' data-scale='1'>
+        <div class='pro-con con'>Limited OS Access</div>
+    </div>
+    <div class='step web-step' data-x='5664' data-y='1709' data-rotate='-90' data-scale='1'>
+        <div class='pro-con'>
+            Examples:<br>
+            <a href='http://mail.google.com'>mail.google.com</a><br>
+            <a href='http://twitter.com'>twitter.com</a>
+        </div>
     </div>
 
     <!-- HYBRID -->
-    <div class='step' data-x='4900' data-y='1770' data-rotate='-90' data-scale='1'>
-        <div class='centered-txt'>Performance<br>&<br>Stability</div>
+    <div id='app-type-overview-hybrid' class='step' data-x='5500' data-y='1450' data-scale='4'></div>
+    <div class='step' data-x='4900' data-y='2418' data-rotate='-90' data-scale='1'>
+        <div class='pro-con pro'>Single Codebase & App Store</div>
+    </div>
+    <div class='step' data-x='5064' data-y='2418' data-rotate='-90' data-scale='1'>
+        <div class='pro-con pro'>Better OS Access</div>
+    </div>
+    <div class='step' data-x='5228' data-y='2418' data-rotate='-90' data-scale='1'>
+        <div class='pro-con con'>Distribution & Updates</div>
+    </div>
+    <div class='step' data-x='5458' data-y='2418' data-rotate='-90' data-scale='1'>
+        <div class='pro-con'>
+            Examples:<br>
+            <img src='images/tools.png'> <a href='http://phonegap.com/apps'>Phonegap</a>
+            <a href='http://www.readwriteweb.com/mobile/2011/09/how-facebook-mobile-was-design.php'>Facebook</a>
+        </div>
     </div>
 
+    <div id='app-type-overview-web-highlight' class='step' data-x='5500' data-y='1450' data-scale='4'>
+        <div id='web-highlight'></div>
+    </div>
+
+    <!-- UI FRAMEWORK -->
+    <div id='framework' class='step pro-con-overview' data-x='9500' data-y='1450' data-scale='4'>
+        <div class='header'>
+           <span>UI Framework?</span> <span class='pro'>Pro's</span> <span>vs.</span> <span class='con'>Con's</span>
+        </div>
+        <span id='dojo'><img src='images/tools.png'> 
+            <a href='http://dojotoolkit.org/features/mobile'>Dojo Mobile</a>
+        </span><br>
+        <br>
+        <span id='jquery'><img src='images/tools.png'> 
+            <a href='http://jquerymobile.com/'>jQuery Mobile</a>
+        </span><br>
+    </div>
+
+    <!-- DOJO MOBILE -->
+    <div id='framework-overview-dojo' class='step' data-x='9500' data-y='1450' data-scale='4'></div>
+    <div class='step' data-x='9600' data-y='995' data-rotate='-90' data-scale='1'>
+        <div class='pro-con pro'>It's Dojo!</div>
+    </div>
+    <div class='step' data-x='9728' data-y='995' data-rotate='-90' data-scale='1'>
+        <div class='pro-con pro'>Native Look & Feel</div>
+    </div>
+    <div class='step' data-x='9856' data-y='995' data-rotate='-90' data-scale='1'>
+        <div class='pro-con pro'>Phonegap Ready</div>
+    </div>
+    <div class='step' data-x='10020' data-y='995' data-rotate='-90' data-scale='1'>
+        <div class='pro-con con'>Wasn't Mature in 2011 (dojo 1.6)</div>
+    </div>
+
+    <!-- JQUERY MOBILE -->
+    <div id='framework-overview-jquery' class='step' data-x='9500' data-y='1450' data-scale='4'></div>
+    <div class='step jquery-step' data-x='9600' data-y='1710' data-rotate='-90' data-scale='1'>
+        <div class='pro-con pro'>Momentum & Maturity</div>
+    </div>
+    <div class='step jquery-step' data-x='9764' data-y='1710' data-rotate='-90' data-scale='1'>
+        <div class='pro-con pro'>Simple</div>
+    </div>
+    <div class='step jquery-step' data-x='9892' data-y='1710' data-rotate='-90' data-scale='1'>
+        <div class='pro-con con'>jQuery</div>
+    </div>
+
+    <div id='framework-overview-jquery-highlight' class='step' data-x='9500' data-y='1450' data-scale='4'>
+        <div id='jquery-highlight'></div>
+    </div>
+
+    <div id='jquery-sample' class='step' data-x='13500' data-y='1450' data-scale='4'>
+        <a class='no-padding' href='examples/jquerymobile.html'>
+            <pre><code class='xml'>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" /&gt;
+                        &lt;script src="http://code.jquery.com/jquery-1.6.4.min.js"&gt;&lt;/script&gt;
+                        &lt;script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"&gt;&lt;/script&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div data-role='page'&gt;
+                            &lt;div data-role='header'&gt;
+                                &lt;h1&gt;jQuery Mobile Example&lt;/h1&gt;
+                            &lt;/div&gt;
+                            &lt;div data-role='content'&gt;
+                                &lt;h2&gt;Button&lt;/h2&gt;
+                                &lt;button&gt;Demo Button&lt;/button&gt;
+                                &lt;h2&gt;Text Box&lt;/h2&gt;
+                                &lt;input type='text'/&gt;
+                                &lt;h2&gt;Select&lt;/h2&gt;
+                                &lt;select data-native-menu='false'&gt;
+                                    &lt;option value='1'&gt;please select an option&lt;/option&gt;
+                                    &lt;option value='2'&gt;option 1&lt;/option&gt;
+                                    &lt;option value='3'&gt;option 2&lt;/option&gt;
+                                    &lt;option value='4'&gt;option 3&lt;/option&gt;
+                                &lt;/select&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code></pre>
+        </a>
+    </div>
+
+    <!-- CREDITS -->
+    <!-- <div class='step' data-x='' data-y='' data-scale='4'>
+        Wrench icon by <a href='http://dryicons.com'>http://dryicons.com</a>
+    </div> -->
+
     <!-- All Slides -->
-    <div id="allslides" class="step" data-x="5000" data-y="0" data-scale="50"></div>
+    <div id="allslides" class="step" data-x="5000" data-y="0" data-scale="50">
+
+    </div>
 </div>
 <script src="js/impress.js"></script>
 <script>impress();</script>
+<script src='js/highlight.pack.js'></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

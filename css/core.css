@@ -1,5 +1,3 @@
-@import 'impress.css';
-
 h1 {
 	font-size: 55px;
 	text-align: center;
@@ -77,12 +75,32 @@ h2 {
 #health p {
 	text-align: center;
 }
-#app-type span {
-	font-size: 55px;
-	line-height: 120px;
+
+/*Application Type*/
+#impress[class*='app-type-overview-'] #app-type {
+	opacity: 1;
 }
-#app-type h1 {
-	margin-bottom: 80px;
+#impress[class*='app-type-overview-'] #app-type span {
+	opacity: 0.3;
+}
+#impress.step-app-type-overview-native #app-type #native {
+	opacity: 1;
+}
+#impress.step-app-type-overview-web #app-type #web {
+	opacity: 1;
+}
+#impress.step-app-type-overview-hybrid #app-type #hybrid {
+	opacity: 1;
+}
+.pro-con-overview {
+	height: 728px;
+}
+.pro-con-overview span {
+	line-height: 98px;
+}
+.pro-con-overview .header {
+	margin-bottom: 70px;
+	font-size: 55px;
 }
 .footnote {
 	font-size: 20px;
@@ -96,10 +114,59 @@ h2 {
 	background-color: #80A894;
 }
 .con {
-	background-color: #9E8A8A;
+	background-color: #BA4646;
 }
 .pro-con {
 	margin: 200px;
 	text-align: center;
 	border-radius: 10px;
+}
+#impress.step-app-type-overview-web-highlight #app-type #web,
+#impress.step-app-type-overview-web-highlight .web-step {
+	opacity: 1;
+}
+#impress.step-app-type-overview-web-highlight #web-highlight {
+ 	height: 129px;
+	width: 515px;
+	border: 1px solid black;
+	position: absolute;
+	margin-left: -19px;
+	border-radius: 10px;
+ }
+
+ /* UI Framework*/
+#impress[class*='framework-overview-'] #framework {
+	opacity: 1;
+}
+#impress[class*='framework-overview-'] #framework span {
+	opacity: 0.3;
+}
+#impress.step-framework-overview-dojo #framework #dojo {
+	opacity: 1;
+}
+#impress.step-framework-overview-jquery #framework #jquery {
+	opacity: 1;
+}
+#impress.step-framework-overview-jquery-highlight #jquery-highlight {
+	height: 129px;
+	width: 550px;
+	border: 1px solid black;
+	position: absolute;
+	margin-left: -19px;
+	border-radius: 10px;
+}
+#impress.step-framework-overview-jquery-highlight #framework #jquery,
+#impress.step-framework-overview-jquery-highlight .jquery-step {
+	opacity: 1;
+}
+
+code {
+	border-radius: 10px;
+	text-shadow: none;
+}
+#jquery-sample {
+	font-size: 16px;
+}
+.no-padding {
+	padding: 0;
 }
