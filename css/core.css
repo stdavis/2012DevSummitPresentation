@@ -63,6 +63,9 @@ h2 {
 #impress.step-overview-m #overview #mobile {
 	opacity: 1;
 }
+#impress.step-overview-d #overview #desktop {
+	opacity: 1;
+}
 #mitigation img {
 	border: solid 1px gray;
 }
@@ -109,6 +112,7 @@ h2 {
 	position: absolute;
 	width: 100%;
 	bottom: 0px;
+	left: 0;
 }
 .pro {
 	background-color: #80A894;
@@ -117,7 +121,7 @@ h2 {
 	background-color: #BA4646;
 }
 .pro-con {
-	margin: 200px;
+	margin: 0 200px;
 	text-align: center;
 	border-radius: 10px;
 }
@@ -163,10 +167,24 @@ h2 {
 code {
 	border-radius: 10px;
 	text-shadow: none;
+	font-size: 20px;
 }
-#jquery-sample {
+.smaller-code {
 	font-size: 16px;
 }
 .no-padding {
 	padding: 0;
+}
+.smaller {
+	font-size: 30px;
+}
+.picture {
+	border: 1px solid black;
+}
+#cluster-pic {
+	margin-left: 300px;
+	margin-top: 20px;
+}
+#wrap-up {
+	height: 600px;
 }

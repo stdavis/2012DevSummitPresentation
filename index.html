@@ -56,7 +56,7 @@
     </div>
     <div class='step' data-x='8140' data-y='-4800' data-rotate='-90' data-scale='4'>
         <ul>
-            <li>Inspire (David & Goliath Pic)</li>
+            <li>Inspire (David & Goliath)</li>
         </ul>
         <blockquote style='margin-left: 200px;'>"I can do anything."</blockquote>
     </div>
@@ -236,7 +236,7 @@
 
     <div id='jquery-sample' class='step' data-x='13500' data-y='1450' data-scale='4'>
         <a class='no-padding' href='examples/jquerymobile.html'>
-            <pre><code class='xml'>
+            <pre><code class='xml, smaller-code'>
                 &lt;!DOCTYPE html&gt;
                 &lt;html&gt;
                     &lt;head&gt;
@@ -269,13 +269,185 @@
         </a>
     </div>
 
-    <!-- CREDITS -->
-    <!-- <div class='step' data-x='' data-y='' data-scale='4'>
-        Wrench icon by <a href='http://dryicons.com'>http://dryicons.com</a>
-    </div> -->
+    <div class='step' data-x='17500' data-y='1450' data-scale='4'>
+        <h1>Drum Roll Please...</h1>
+    </div>
+
+    <div id='geolocation' class='step' data-x='21500' data-y='1450' data-scale='4'>
+        <h1>HTML5 Geolocation API</h1>
+
+        <pre><code>
+            var timerid = navigator.geolocation.watchPosition(function(pos){
+                that.processPosition(pos);
+            }, function(er) {
+                ...
+                navigator.geolocation.clearWatch(timerid);
+                navigator.geolocation.watchPosition(function(pos){
+                    that.processPosition(pos);
+                }, function(er){...},
+                {timeout: 10000, enableHighAccuracy: false});
+            }, {
+                enableHighAccuracy: true
+            });
+        </code></pre>
+
+        <p class='smaller'>
+            <img src='images/light_bulb.png'> Use watchPosition() instead of getCurrentPosition() for higher accuracy.
+        </p>  
+
+        <div class='footnote'>
+            <a href='http://html5doctor.com/finding-your-position-with-geolocation/'>HTML5 Doctor</a>
+        </div>
+    </div>
+
+    <div id='accuracy' class='step' data-x='25500' data-y='1450' data-scale='4'>
+        <img class='slide-image' src='images/accuracy.jpg'/>
+    </div>
+
+    <div id='offline' class='step' data-x='29500' data-y='1450' data-scale='4'>
+        <h1>Offline/Cache Manifest</h1>
+        <pre><code>
+            &lt;html manifest="roadkill.appcache"&gt;
+        </code></pre>
+        <p class='smaller'>
+            <img src='images/light_bulb.png'>Increment version number in manifest file.<br>
+            <img src='images/light_bulb.png'>Don't bother with it during active development.</br>
+        </p>
+        <div class='pro-con pro'>Performance</div>
+        <div class='footnote'>
+            <a href='http://www.html5rocks.com/en/tutorials/appcache/beginner/'>HTML5 Rocks Article</a>
+        </div>
+    </div>
+
+    <div id='cache-manifest' class='step' data-x='33500' data-y='1450' data-scale='4'>
+        roadkill.appcache
+        <pre><code class='smaller-code'>
+            CACHE MANIFEST
+
+            # Version: 77
+
+            CACHE:
+            css/core.css
+            css/images/ajax-loader.png
+            css/images/icons-18-white.png
+            css/images/icons-18-black.png
+            css/images/icons-36-white.png
+            css/images/icons-36-black.png
+            css/jquery.mobile-1.0.min.css
+
+            images/icon.png
+            images/splash.png
+
+            dojo.js
+            roadkill_en-us.js
+            roadkill.js
+
+            index.html
+
+            NETWORK:
+            *
+        </code></pre>
+    </div>
+
+    <div class='step' data-x='37500' data-y='1450' data-scale='4'>
+        <img src='images/offline.png'>
+        <div style='float: right; width: 330px;'>
+            <a href='http://diveintohtml5.info/detect.html#storage'>LocalStorage</a>
+             used to store reports offline for later submission to server.
+        </div>
+    </div>
+
+    <div id='weinre' class='step' data-x='41500' data-y='1450' data-scale='4'>
+        <img src='images/tools.png'> 
+        <a href='http://phonegap.github.com/weinre/'>Web Inspector Remote (Weinre)</a>
+        <ul class='smaller'>
+            <li>Allowed me to debug my client's phone from 90 miles away.</li>
+            <li>Allowed me to debug my own phone from a few feet away.</li>
+        </ul>
+    </div>
+
+    <!-- DESKTOP -->
+    <div id='overview-d' class='step' data-x='4000' data-y='0' data-scale='16'></div>
+    <div class='step' data-x='6600' data-y='4500' data-scale='4'>
+        <ul>
+            <li>Viewer</li>
+            <li>Manual Report Entry</li>
+            <li>Filter & Download Data</li>
+        </ul>
+    </div>
+
+    <div class='step' data-x='10600' data-y='4500' data-scale='4'>
+        <img src='images/tools.png'>
+        <a href='http://twitter.github.com/bootstrap/'>Twitter's Bootstrap</a>
+        <p class='smaller'>
+            <img src='images/light_bulb.png'>
+             Be careful with css collisions with ESRI's JavaScript API.
+        </p>
+        <pre><code>
+            input, textarea {
+              -webkit-transform-style: preserve-3d;
+            }
+            .btn {
+              -webkit-transform-style: preserve-3d;
+            }
+        </code></pre>
+    </div>
+
+    <div class='step' data-x='14600' data-y='4500' data-scale='4'>
+        <h1>Drum Roll Please...</h1>
+        <div class='centered-txt'>
+            <a href='http://test.mapserv.utah.gov/roadkill/desktop/' target='_blank'>Desktop App</a>
+        </div>
+    </div>
+
+    <div class='step' data-x='18600' data-y='4500' data-scale='4'>
+        <img src='images/tools.png'>
+        <a href='http://geochalkboard.wordpress.com/2010/09/09/clustering-with-the-arcgis-server-javascript-api/'>ClusterLayer from globoserv</a>
+        <img id='cluster-pic' class='picture' src='images/clustering.png'>
+    </div>
+
+    <div class='step' data-x='22600' data-y='4500' data-scale='4'>
+        <h1>Python GP Web Services</h1>
+        <div class='smaller'>
+            <img src='images/light_bulb.png'> Pass in <u>all</u> parameters; pass "" for optional params.
+            <br>
+            <img src='images/light_bulb.png'> Make sure to specify a scheme (in ArcCatalog) for all input parameters of type FeatureSet.
+        </div>
+        <pre><code class='python smaller-code'>
+            import arcpy
+
+            '''
+            GP Parameters
+            0 - route
+            1 - fromMP
+            2 - toMP
+            3 - outSegment - FeatureSet
+            '''
+
+            arcpy.env.overwriteoutput = True
+
+            # variables
+            route = arcpy.GetParameterAsText(0)
+            fromMP = float(arcpy.GetParameterAsText(1))
+            toMP = float(arcpy.GetParameterAsText(2))
+        </code></pre>
+    </div>
+
+    <div id='wrap-up' class='step' data-x='26600' data-y='5500' data-scale='4' data-rotate='90'>
+        <h1>"You'll be famous!"</h1>
+        <h1>Scott Davis, Utah AGRC</h1>
+        <h1><a href='https://twitter.com/#!/ScottAGRC'>@ScottAGRC</a></h1>
+        <h1><a href='mailto:stdavis@utah.gov'>stdavis@utah.gov</a></h1>
+        <div class='footnote'>
+            Presentation built with <a href='http://bartaz.github.com/impress.js/#/bored'>impress.js</a> 
+            (dramamine not included).
+            <br>
+            Wrench icon by <a href='http://dryicons.com'>http://dryicons.com</a>
+        </div>
+    </div>
 
     <!-- All Slides -->
-    <div id="allslides" class="step" data-x="5000" data-y="0" data-scale="50">
+    <div id="allslides" class="step" data-x="14000" data-y="0" data-scale="55">
 
     </div>
 </div>
