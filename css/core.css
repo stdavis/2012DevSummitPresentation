@@ -15,12 +15,14 @@ h1 {
 #overview {
 	font-size: 115px;
 }
-#impress.step-allslides .step {
+/*#impress.step-allslides .step {
 	opacity: 1;
 	cursor: pointer;
-}
+}*/
 #allslides {
 	z-index: -50;
+	height: 600px;
+	padding-top: 150px;
 }
 h2 {
 	font-size: 40px;
@@ -184,7 +186,4 @@ code {
 #cluster-pic {
 	margin-left: 300px;
 	margin-top: 20px;
-}
-#wrap-up {
-	height: 600px;
 }
